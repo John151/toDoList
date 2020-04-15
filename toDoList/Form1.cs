@@ -29,8 +29,23 @@ namespace toDoList
                 }
                 else
                 {
-                    clsToDo.Items.Add(newItem);
+                    //Use Add to add new item to end of items collection
+                    DateTime todoCreated = DateTime.Now;
+                    bool urgent = chkUrgent.Checked;
+
+                    // Format the text, date/time created and urgent into one string
+                    string todoText = $"{newItem} - Created at {todoCreated:g}";
+                    if (urgent)
+                    {
+                        todoText += " URGENT!";
+                    }
+                    // add to the ListBox items
+                    clsToDo.Items.Add(todoText);
                     txtNewToDo.Text = "";
+
+                    //clear inputs
+                    txtNewToDo.Text = "";
+                    chkUrgent.Checked = false;
                 }
             }
         }

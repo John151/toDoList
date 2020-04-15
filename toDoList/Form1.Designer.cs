@@ -36,6 +36,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lstDone = new System.Windows.Forms.ListBox();
+            this.chkUrgent = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -108,11 +109,22 @@
             this.lstDone.Size = new System.Drawing.Size(437, 95);
             this.lstDone.TabIndex = 7;
             // 
+            // chkUrgent
+            // 
+            this.chkUrgent.AutoSize = true;
+            this.chkUrgent.Location = new System.Drawing.Point(425, 55);
+            this.chkUrgent.Name = "chkUrgent";
+            this.chkUrgent.Size = new System.Drawing.Size(64, 17);
+            this.chkUrgent.TabIndex = 8;
+            this.chkUrgent.Text = "Urgent?";
+            this.chkUrgent.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.chkUrgent);
             this.Controls.Add(this.lstDone);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnDelete);
@@ -138,6 +150,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox lstDone;
+        private System.Windows.Forms.CheckBox chkUrgent;
     }
 }
 
